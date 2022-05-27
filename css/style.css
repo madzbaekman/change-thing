@@ -1,0 +1,95 @@
+
+/* COMMON PART */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: #222;
+  box-sizing: border-box;
+}
+
+/* CONTENT PART */
+.container {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/background1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.content-wrap {
+  padding-top: 120px;
+  margin: 0 auto;
+  width: 760px;
+}
+
+.content-wrap span {font-size: 60px;}
+
+.content-box {
+  margin: 24px 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.content-box p {
+  margin: 0;
+}
+
+.content-box:hover {
+  transform : scale(1.01);
+  box-shadow: 0px 0px 5px #aaa;
+}
+
+.content-box:nth-child(7):hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.content-box p {
+  padding: 16px 0;
+}
+
+/* MODAL PART */
+.modal-bg {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  position: fixed;
+  padding-top: 90px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, .8);
+  text-align: center;
+  transition: all .5s;
+}
+
+.modal-content {
+  position: relative;
+  padding: 40px;
+  margin: 0 auto;
+  width: 640px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px #fff;
+}
+
+.modal-content span {
+  font-size: 36px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.modal-show {
+  visibility: visible;
+  opacity: 1;
+}
